@@ -1,11 +1,10 @@
 # C++ Problem-Solving Repository
 
-Welcome to the C++ Problem-Solving Repository! Here, you'll find a collection of solutions to coding challenges from HackerRank's C++ domain and practical exercises from your coursework labs. This repository serves as a resourceful hub to explore and study various problem-solving approaches in C++.
+Welcome to my C++ Problem-Solving Repository! Here, you'll find a diverse collection of solutions to coding challenges from various platforms, covering HackerRank's C++ domain, coursework assignments, Udacity CPP quizzes, CodeForces problem set exercises, and CodeForces Assuit University sheets. This repository serves as a comprehensive hub for exploring and studying various problem-solving approaches in C++.
 
 ## Table of Contents
 - [About](#about)
 - [Content](#content)
-- [Structure](#structure)
 - [How to Use](#how-to-use)
 - [Contributing](#contributing)
 
@@ -19,26 +18,12 @@ Solutions to problems from HackerRank's C++ domain are structured and cataloged 
 ### Course Labs
 Solutions to the practical exercises from your coursework labs are organized within the 'Course Labs' directory. Similar to the HackerRank solutions, each lab solution is labeled accordingly and contains explanations and best practices for resolving specific programming challenges.
 
-## Structure
-The repository is structured as follows:
-/HackerRank
-/Problem_1
-problem_1.cpp
-README.md (explanation, hints, and approach used)
-/Problem_2
-problem_2.cpp
-README.md
-...
-/Course Labs
-/Lab_1
-lab_1.cpp
-README.md
-/Lab_2
-lab_2.cpp
-README.md
-...
-vbnet
-Copy code
+### CodeForces ProblemSet
+Solutions to problems from CodeForces are available in the 'CodeForces' directory. Each solution is named after the corresponding problem and includes explanations and approaches used to solve the problems.
+
+### CodeForces Assuit University Sheets
+Solutions to problems from CodeForces Assuit University sheets are organized within the 'Assuit University Sheets' directory. Each solution is labeled accordingly and includes explanations for tackling these specific challenges.
+
 
 ## How to Use
 Feel free to navigate through the 'HackerRank' and 'Course Labs' directories to access the solutions. Each solution file is accompanied by a README file, providing detailed explanations, hints, and approaches used to solve the specific problem. You can explore the different strategies and gain insights into problem-solving techniques.
