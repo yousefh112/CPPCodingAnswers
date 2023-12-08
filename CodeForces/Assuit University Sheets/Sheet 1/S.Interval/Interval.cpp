@@ -22,6 +22,6 @@ int main() {
         cout << "Out of Intervals" << endl;
     }
 
-    // Return 0 to indicate successful execution
+    
     return 0;
 }
