@@ -2,23 +2,28 @@
 #include <string>
 using namespace std;
 
-int main()
-{
-    string N1;
-    cin >> N1;
-    char N2 = N1.find(".");
-    string N3 = N1.substr(N2);
-    int N4 = stoi(string(N3, 1));
-    string N5 = N1.substr(0, N2);
-    int N6 = stoi(string(N5, 1));
+int main() {
+    string input;
+    cin >> input;
 
-    if (N4 == 000)
-    {
-        cout << "int " << N5 << endl;
-    }
-    else
-    {
-        cout << "float " << N5 << " 0." << N4 << endl;
+    size_t dotIndex = input.find(".");
+    
+    if (dotIndex == string::npos) {
+        // No decimal point found, treat it as an integer
+        cout << "int " << input << endl;
+    } else {
+        // Decimal point found, treat it as a float
+        string integerPart = input.substr(0, dotIndex);
+        string decimalPart = input.substr(dotIndex + 1);
+        int decimalValue = stoi(decimalPart);
+
+        if (decimalValue == 0) {
+            // No decimal value, treat it as an integer
+            cout << "int " << integerPart << endl;
+        } else {
+            // Non-zero decimal value, treat it as a float
+            cout << "float " << integerPart << " 0." << decimalValue << endl;
+        }
     }
 
     return 0;
