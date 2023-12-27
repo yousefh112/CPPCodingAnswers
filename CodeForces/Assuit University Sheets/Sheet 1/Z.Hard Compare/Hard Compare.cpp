@@ -9,7 +9,7 @@ bool checkGreaterLog(double num1, double num2, double num3, double num4) {
     // calculate result2
     double res2 = num4 * log(num3);
 
-    // return true if result1 is greater than result2, false otherwise
+    // return true if result1 is greater than result2, false otherwise.
     return res1 > res2;
 }
 
