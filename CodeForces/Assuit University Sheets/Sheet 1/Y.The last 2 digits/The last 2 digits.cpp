@@ -1,43 +1,54 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
-// Function to multiply two strings representing large numbers
-string multiply(string num1, string num2) {
-    // Initialize the result with zeros
-    string result(num1.size() + num2.size(), '0');
+void solution1()
+{
+    // input 4 integers a, b, c, d
+    long long a, b, c, d;
+    cin >> a >> b >> c >> d;
 
-    // Nested loops to perform multiplication
-    for (int i = num1.size() - 1; i >= 0; i--) {
-        for (int j = num2.size() - 1; j >= 0; j--) {
-            // Calculate product and add to the current position
-            int product = (num1[i] - '0') * (num2[j] - '0');
-            int sum = product + (result[i + j + 1] - '0');
-            result[i + j + 1] = sum % 10 + '0';
-            result[i + j] += sum / 10;
-        }
+    // find the product of last 2 digits of a, b, c, d
+    long long product = a % 100 * b % 100 * c % 100 * d % 100;
+
+    // handle case when product is less than 10
+    if (product <= 9)
+    {
+        cout << "0" << product;
     }
-
-    // Remove leading zeros in the result
-    for (int i = 0; i < result.size() - 1; i++) {
-        if (result[i] != '0') break;
-        result = result.substr(1);
+    else
+    {
+        cout << product;
     }
+}
 
-    return result;
+void solution2()
+{
+    // input 4 integers a, b, c, d
+    long long a, b, c, d;
+    cin >> a >> b >> c >> d;
+
+    // calculate the last 2 digits of a, b, c, d separately
+    long long a1 = a % 100;
+    long long b1 = b % 100;
+    long long c1 = c % 100;
+    long long d1 = d % 100;
+
+    // calculate the product of last 2 digits
+    long long x = a1 * b1 * c1 * d1;
+
+    // handle case when product is less than 10
+    if (x % 100 <= 9)
+    {
+        cout << "0" << x % 100;
+    }
+    else
+    {
+        cout << x % 100;
+    }
 }
 
 int main()
 {
-    // Input four large numbers as strings
-    string A, B, C, D;
-    cin >> A >> B >> C >> D;
-
-    // Multiply each pair of numbers and then multiply the results
-    string res = multiply(multiply(A, B), multiply(C, D));
-
-    // Print the last 2 digits from the final result
-    cout << res.substr(res.length() - 2) << endl;
-
+    solution1();
     return 0;
 }
