@@ -4,23 +4,28 @@ using namespace std;
 
 int main()
 {
-    // variable to store user input
+    // Variable to store user input
     int N;
 
-    // while loop to take inputs until 1999 is encountered
+    // While loop to take inputs until 1999 is encountered
     while (true)
     {
+        // Prompt user for input
+        cout << "Enter a number: ";
 
-        // check if the current input is 1999
+        // Read input from user
+        cin >> N;
+
+        // Check if the current input is 1999
         if (N == 1999)
         {
-            // print "Correct" and exit the loop
+            // Print "Correct" and exit the loop
             cout << "Correct" << endl;
             break;
         }
         else
         {
-            // print "Wrong" for inputs that are not 1999
+            // Print "Wrong" for inputs that are not 1999
             cout << "Wrong" << endl;
         }
     }
